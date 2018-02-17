@@ -58,7 +58,7 @@ section {}
 article {margin-top: 10px; border-top: 2px solid black;}
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
   width: 100%; /* fill the page in the small/phone view */
-  margin: 1em;
+  
 }
 
 footer {clear: both; background-color: #00008B}

@@ -1,0 +1,76 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
+  
+    
+    header h1{}
+    .subheading{}
+    header img{
+            }
+    nav{display: flex;}
+    nav li{}
+    nav ul.hide {display: flex;}
+    nav ul{flex-wrap: nowrap;
+    justify-content: center;}
+
+    nav button { display: none; }  /* hamburger button does not need to be shown */
+  
+  
+    main {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    main h2 {padding-left: 0em;}
+    section.forecast { display: block;}
+   
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        padding: 10px;
+    }/* show the 10-day forecast with the medium view and up */
+    
+    article p.town-article { display: flex; flex-direction: row-reverse;}
+  
+    article p.town-article img {width: 62.666%; margin: 0 0 1em 1em; }  /* responsive images */
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #191970;
+        
+    }
+
+    li {
+        
+        
+    }
+
+    li a {
+        display: flex;
+        color: #FFD700;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #00008B;
+        
+    }
+    
+    div.weatherGallery{
+        grid-template-columns: repeat(2, 49%);
+        grid-gap:2%;
+    }
+    
+    
+
+}

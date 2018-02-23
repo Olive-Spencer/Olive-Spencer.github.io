@@ -20,7 +20,7 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
 header {background-color: #00008B; display: flex;}
 header h1 {color: #FFD700;}
 header img {max-width: 100px; }
-header .heading {color: #FFD700; height 50px; width 50px; }
+header .heading {color: #FFD700;}
 .logo {width: 110px; height: 100px;}
 
 section h3{border-top: 2px solid black;}

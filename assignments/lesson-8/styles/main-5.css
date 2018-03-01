@@ -124,7 +124,7 @@ label span{
 
 input.submitBtn{
     border: black solid 1px;
-    padding .5em;
+    padding: .5em;
     margin:1em 5em 2em;
     width:35%;
     height:50px;

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery</title>
+  <meta name="author" content="Spencer Olive">
+  <meta name="description" content="gallery">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header class="flexHeader">
+    
+    <div class = "logo"><img src="images/weatherLogo.jpg" alt="The site logo">
+      </div>
+    <div class = "heading"><h1>Weather You Like It or Not</h1>
+      
+        You need to know the weather!</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="mainNav" class ="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li  class="active"><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+    <main>
+        <h1>Gallery</h1>
+    
+        <div class="weatherGallery">
+            <figure>
+            <img src="images/gal1_400x.jpeg" alt="beach sunset">
+            <figcaption>Sunset on the Beach</figcaption>
+            </figure>
+           
+            <figure>
+            <img src="images/gal2_400x.jpeg" alt="lake sunset">
+            <figcaption>Lakeside Sunset</figcaption>
+            </figure>
+            
+            <figure>
+            <img src="images/gal3_400x.jpg" alt="snowy mountains">
+            <figcaption>Snowcapped Mountains in the Middle of Winter</figcaption>
+            </figure>
+            
+            <figure>
+            <img src="images/gal4_400x.jpg" alt="lakes in the mountains">
+            <figcaption>Lakes Against the Mountains</figcaption>
+            </figure>
+            
+            <figure>
+            <img src="images/gal5_400x.jpeg" alt="desert">
+            <figcaption>Dunes in the Desert</figcaption>
+            </figure>
+            
+            <figure>
+            <img src="images/gal6_400x.jpeg" alt="snowy forest road">
+            <figcaption>Snowcovered Forest Road</figcaption>
+            </figure>
+        </div>
+    
+    </main>
+    
+      <footer>
+    <aside>
+      Spencer Olive
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Weather You Like It or Not | <span id="currentdate"></span></p>
+  </footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/windchill.js"></script>
+
+</body>
+</html>

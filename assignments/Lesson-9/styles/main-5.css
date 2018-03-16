@@ -48,8 +48,13 @@ nav ul li a {
     text-decoration: none;
     color: #FFD700;
 }
-nav ul li.active a {}
-nav ul li a:hover {background-color: #00008B;}
+nav ul li.active a {color:#191970;
+   
+}
+nav ul li.active a:hover {background-color:gold;
+   
+}
+nav ul li a:hover {background-color: deepskyblue;}
 
 main {display: flex;
 flex-direction: column;}
@@ -149,3 +154,13 @@ section ul{
     background-color: white;
 }
 
+.active{
+    background-color: #FFD700;
+    
+}
+
+section img{
+    border-radius: 10px;
+}
+
+.mainArticle{border-top: none; border: 2px solid black; border-radius: .9em;}

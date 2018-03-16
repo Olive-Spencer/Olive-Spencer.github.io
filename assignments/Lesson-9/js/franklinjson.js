@@ -3,10 +3,6 @@ var request= new XMLHttpRequest();
 request.open('GET', requestURL, true);
 request.send();
 
-var tenDayURL = 'https://api.wunderground.com/api/c4def7abb39dd9ac/forecast10day/q/MN/Franklin.json';
-var tenDayRequest = new XMLHttpRequest();
-tenDayRequest.open('GET', tenDayURL, true);
-tenDayRequest.send();
 
 request.onload = function() {
     var franklin = JSON.parse(request.responseText);
@@ -21,7 +17,10 @@ request.onload = function() {
     document.getElementById('currentWeather').innerHTML = franklin.current_observation.weather;
     document.getElementById('high').innerHTML = franklin.forecast.simpleforecast.forecastday["0"].high.fahrenheit;
     document.getElementById('low').innerHTML = franklin.forecast.simpleforecast.forecastday["0"].low.fahrenheit;
-    document.getElementById('currentPic').src = franklin.current_observation.icon_url;
+    
+    var icon = franklin.current_observation.icon_url;
+    icon = icon.replace("http","https");
+    document.getElementById('currentPic').src = icon;
     
     
 }

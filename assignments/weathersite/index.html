@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather You Like it or Not</title>
+  <meta name="author" content="Spencer Olive">
+  <meta name="description" content="Home">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet"> <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header class="flexHeader">
+    
+    <div class = "logo"><img src="images/weatherLogo.jpg" alt="The site logo">
+      </div>
+    <div class = "heading"><h1>Weather You Like It or Not</h1>
+      
+        You need to know the weather!</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="mainNav" class ="hide">
+    	<li  class="active"><a href="#">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">StormCenter</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+        <main>
+            
+            <article class="mainArticle"><h1>Breaking Weather</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vulputate suscipit orci id auctor. Etiam enim nisl, iaculis vel porttitor et, finibus eget ligula. Donec non justo ultrices, iaculis est eu, hendrerit felis. Donec finibus libero eget pulvinar iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean et aliquet neque. Praesent nec est quis mi imperdiet interdum posuere non leo. Nulla facilisi.</p>
+
+            <p>Donec euismod quis orci ac rhoncus. Pellentesque pellentesque bibendum felis, ut fringilla neque finibus eu. Integer fringilla purus at turpis dignissim, eget tincidunt lectus mollis. Quisque mauris felis, pellentesque a nisi a, suscipit iaculis arcu. Vestibulum elementum dui sit amet convallis pellentesque. Donec consequat, nunc nec pulvinar varius, ligula odio elementum dolor, vitae rhoncus turpis nulla non ipsum. Suspendisse egestas faucibus arcu eget euismod. Nulla nec lacinia neque, vestibulum hendrerit est. Vivamus quis hendrerit massa. Praesent nec varius ex, id gravida dui.</p>
+                </article>
+            
+            
+        <div class="weatherMain">
+            <section>
+                <img src="images/gal1_400x.jpeg" alt="beach sunset">
+                <h2><span id="franklin"></span>:</h2>
+                <p>Motto: <span id="mottoF"></span></p>
+                <p>Founded: <span id ="foundedF"></span></p>
+                <p>Population: <span id="popF"></span></p>
+                <p>Rainfall: <span id="rainF"></span> inches</p>
+                
+                <h3>Events</h3>
+                <ul class="events">
+                    <li id="event1F"></li>
+                    <li id="event2F"></li>
+                    <li id="event3F"></li>
+                </ul>
+                
+            </section>
+           
+            <section>
+                <img src="images/gal4_400x.jpg" alt="lakes in the mountains">
+            <h2><span id="greenville"></span>:</h2>
+                <p>Motto: <span id="mottoG"></span></p>
+                <p>Founded: <span id ="foundedG"></span></p>
+                <p>Population: <span id="popG"></span></p>
+                <p>Rainfall: <span id="rainG"></span> inches</p>
+                <h3>Events</h3>
+                <ul>
+                    <li id="event1G"></li>
+                    <li id="event2G"></li>
+                    <li id="event3G"></li>
+                    <li id="event4G"></li>
+                </ul>
+                
+            </section>
+            
+            <section>
+            <img src="images/gal6_400x.jpeg" alt="snowy forest road">
+            <h2><span id="springfield"></span>:</h2>
+                <p>Motto: <span id="mottoS"></span></p>
+                <p>Founded: <span id ="foundedS"></span></p>
+                <p>Population: <span id="popS"></span></p>
+                <p>Rainfall: <span id="rainS"></span> inches</p>
+                <h3>Events</h3>
+                <ul>
+                    <li id="event1S"></li>
+                    <li id="event2S"></li>
+                    <li id="event3S"></li>
+                </ul>
+            </section>
+            
+            
+            
+            
+        </div>
+            
+            
+    
+    </main>
+
+    
+<footer>
+    <aside>
+      Spencer Olive
+    </aside>
+    <p class="footer-bar">&copy;2017 All Rights Reserved | Weather You Like It or Not | <span id="currentdate"></span></p>
+</footer>
+
+    <script src="js/hamburger.js"></script>
+    <script src="js/currentdate.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/mainjson.js"></script>
+
+</body>
+</html>

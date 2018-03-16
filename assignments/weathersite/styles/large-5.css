@@ -1,0 +1,23 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+  article p.town-article img { }
+    
+    
+    div.weatherGallery{
+        grid-template-columns: repeat(3, 33%);
+    }
+    
+    div.weatherGallery figure:hover{
+        box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+    }
+    
+    div.weatherMain{
+        grid-template-columns: repeat(3, 33%);
+        grid-gap:2%;
+    }
+    
+
+
+  
+}

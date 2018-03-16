@@ -1,0 +1,166 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+    font-family: 'Lora', serif;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: 100%;
+    
+   
+    
+    
+}
+
+header {background-color: #00008B; display: flex;}
+header h1 {color: #FFD700;}
+header img {max-width: 100px; }
+header .heading {color: #FFD700;}
+.logo {width: 110px; height: 100px;}
+
+section h3{border-top: 2px solid black;}
+
+nav {background-color: #191970}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    color: #FFD700;
+    border: none;
+    font-size: 1.6rem;
+}
+nav ul { 
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #191970;}
+nav ul.hide {display: none;}
+nav ul li {flex-basis: 100%}
+nav ul li a {
+    display: block;
+    padding: .8rem;
+    text-decoration: none;
+    color: #FFD700;
+}
+nav ul li.active a {color:#191970;
+   
+}
+nav ul li.active a:hover {background-color:gold;
+   
+}
+nav ul li a:hover {background-color: deepskyblue;}
+
+main {display: flex;
+flex-direction: column;}
+main h2 {padding-left: 2em;}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%;}
+
+picture img{ width: 50px;}
+section {}
+
+article {margin-top: 10px; border-top: 2px solid black;}
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 100%; /* fill the page in the small/phone view */
+  
+}
+
+footer {clear: both; background-color: #00008B}
+footer aside {color: #FFD700}
+footer>p {color: #FFD700;} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+.forecast {display: none;}
+
+div.weatherGallery{
+        padding: 0 2%;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+
+div.weatherGallery figure {margin: 2rem 0; border: 1px solid black;}
+div.weatherGallery figure img {width: 100%;}
+div.weatherGallery figure figcaption {text-align: center; font-size: 1rem;}
+
+div.weatherMain{
+        padding: 0 2%;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+
+div.weatherMain section {margin: 2rem 0; border: 2px solid black; border-radius: .9em; padding-bottom: 20px;}
+div.weatherMain section img {width: 100%;}
+
+
+
+.clearfix:after {
+    content: "";
+    display:table;
+    clear:both;
+}
+
+form{width: 100%;
+    text-align: left;
+    
+    
+}
+fieldset{
+    margin:3em;
+    border-radius: .9em;
+    
+}
+
+
+legend{
+    border:#000 solid 1px;
+    padding: .5em;
+    color:#FFD700;
+    border-radius: .9em;
+    background-color: #00008B;
+    
+}
+
+label{
+    display: block;
+    margin: .5em;
+}
+label span{
+    display:block;
+    font-size:.8em;
+    color: black;
+    padding-top: .5em;
+    padding-bottom: .2em;
+}
+
+input.submitBtn{
+    border: black solid 1px;
+    padding: .5em;
+    margin:1em 5em 2em;
+    width:35%;
+    height:50px;
+    border-radius: .9em;
+    background-color: #00008B;
+    color: #FFD700;
+    box-shadow: 4px 4px 10px gray;
+}
+
+section ul{
+    background-color: white;
+}
+
+.active{
+    background-color: #FFD700;
+    
+}
+
+section img{
+    border-radius: 10px;
+}
+
+.mainArticle{border-top: none; border: 2px solid black; border-radius: .9em;}

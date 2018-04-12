@@ -1,0 +1,14 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+    
+    nav ul{width: 75%;}
+    nav ul li a{width:100%;}
+  article p.town-article img { }
+
+    .left{width: 40%; float:left; margin-left: 5%}
+    .right{width: 40%; float: right; margin-right: 5%}
+
+
+  
+}

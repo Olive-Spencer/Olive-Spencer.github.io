@@ -88,7 +88,8 @@ footer>p {color: #FFFFFF;} /* This structure refers to p elements that are direc
 
 section{margin-top: 50px; width: 100%; border-style: solid; border-color:#fff; float:left; border-radius: 30px; background-color: #4D6160; margin-bottom: 20px;}
 
-section h2, p{ color:#fff;}
+section h2, p{ color:#fff; }
+section p a{color : #fff;}
 
 section img{
     max-width: 98%; margin-top: 20px;border-radius: 10px;
@@ -110,7 +111,7 @@ main a{text-decoration: none;}
 .button {margin: auto; height: 50px; width: 20%; min-width:200px; background-color:#587040; color:#fff; padding: 15px; text-align: center; margin-bottom: 10px; border-radius: 30px; }
 .button:hover{background-color: #99C383;}
 
-table { width: 50%; margin: 100px; background-color:#4D6160; color:#fff; border }
+table { width: 50%; margin: 100px; background-color:#4D6160; color:#fff;}
 table {
         margin-left: auto;
         margin-right: auto;
@@ -183,7 +184,7 @@ label span{
     padding-bottom: .2em;
 }
 
-label input{width:}
+label input{}
 
 input.submitBtn{
     border: black solid 1px;

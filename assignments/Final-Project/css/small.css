@@ -52,7 +52,7 @@ nav ul li a {
 nav ul li.active a {color:#000;
    
 }
-nav ul li.active a:hover {background-color:#;
+nav ul li.active a:hover {
    
 }
 nav ul li a:hover {background-color:#99C383 ;}
@@ -125,5 +125,80 @@ table {
         padding: 10px;
 }
 tr:nth-child(even) {background-color: #867A6E;}
+
+.slideshow{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.bikeSales{display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;}
+
+form{width:100%; margin-left: 10px; margin-right: 10px;
+    
+   
+    
+    
+    
+    
+}
+fieldset{
+    
+    margin:3em;
+    
+    border-radius: .9em;
+    background-color: #867A6E
+    
+}
+
+
+legend{
+    border:#000 solid 1px;
+    padding: .5em;
+    color:#FFF;
+    border-radius: .9em;
+    background-color: #587040;
+    
+    
+}
+
+label{
+    
+    display: flex;
+    margin: 1em;
+    padding: .5em;
+    justify-content:center;
+    border-bottom: 1px solid white;
+}
+label span{
+    display:flex;
+    
+    font-size:.8em;
+    color: white;
+    padding-top: .5em;
+    padding-bottom: .2em;
+}
+
+label input{width:}
+
+input.submitBtn{
+    border: black solid 1px;
+    padding: .5em;
+    margin:1em 5em 2em;
+    width:35%;
+    height:50px;
+    border-radius: .9em;
+    background-color: #587040;
+    color: #FFF;
+    box-shadow: 4px 4px 10px gray;
+}
+input.submitBtn:hover{background-color: #99C383;}
+
+.map{width: 40%;}
+
 
 

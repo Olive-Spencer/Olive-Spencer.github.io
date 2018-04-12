@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Mountain Spoke</title>
+  <title>Event Registration - The Mountain Spoke Bike Shop</title>
   <meta name="author" content="Spencer Olive">
-  <meta name="description" content="The Weather Spoke Mountain bikes">
+  <meta name="description" content="The Mountain Spoke bikes and tours">
   
   <link href="https://fonts.googleapis.com/css?family=Domine" rel="stylesheet"><!-- Google API font reference -->
   <link href="css/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
@@ -26,7 +26,7 @@
     <nav>
     <button onclick="toggleNavMenu()">&#9776;</button>
     <ul id="mainNav" class ="hide">
-    	<li><a href="#">Home</a></li>
+    	<li><a href="index.html">Home</a></li>
     	<li><a href="adventures.html">Adventures</a></li>
     	<li  class="active"><a href="events.html">Events</a></li>
     	<li><a href="sales.html">Sales</a></li>
@@ -35,6 +35,33 @@
     </ul>		
   </nav>
     
+    <main>
+        <section> <img src="images/routemap.jpg" class="map" alt="route map"    sizes="50vw" 
+           srcset="images/routemap_400.jpg 400w,
+                   images/routemap_800.jpg 800w,"><h2>The Great Contenental Divide:</h2><p>This trek has you traveling from Banff, Alberta to Antelope Wells, NM. It's not for the faint of heart. You will be traveling through dirt trails in the mountains. To complete the journey you will travel 2768 miles over 10 days. you must be an expert mountain biker to perticipate. All applicants will require a physical exam as well as a signed waver. </p><p>cost: $1400</p><p>The trail is open June - July</p><p>Enter your information below to register.</p></section>
+    <section>
+    <form action="thanks.html" method="get" enctype="multipart/form-data" name="stormcenter">
+        
+        <fieldset>
+        <legend>Register Now:</legend>
+            <label><span>Full Name:</span> <input name="fullname" type="text" value="" placeholder="Full Name" pattern="[A-Za-z ]{5,}" required></label>
+            <label><span>Email:</span> <input name="email" type="email" value="" placeholder="example@gmail.com" required></label>
+            <label><span>Phone:</span> <input name="phone" type="tel" value="" placeholder="1234567890" required></label>
+            <label><span>State/Country:</span> <input name="state" type="text" value="" placeholder="utah" required></label>
+            <label><span>Date of Birth:  </span><input name="dob" type="date"></label>
+            <label><span>Comments: </span>
+            <textarea name="additionalinfo" rows="2" cols="30">
+            </textarea>
+        </label>
+        </fieldset>
+        
+        <input type="submit" value="Submit" class="submitBtn">
+        
+            
+    </form>
+        </section>
+    
+    </main>
     
     
     
@@ -45,13 +72,16 @@
     
     
     
-    </body>
+    
+    
     
     <footer>
     <aside>
       The Mountain Spoke
     </aside>
-    <p class="footer-bar">&copy;2018 All Rights Reserved | Mountain Spoke Inc. | 3950 Valley Commons Drive Bozeman, MT | <span id="currentdate"></span></p>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Mountain Spoke Inc. | 3950 Valley Commons Drive Bozeman, MT | <span id="currentdate"></span> | <a href="resources.html">Video/Resources</a></p>
 </footer>
     <script src="js/hamburger.js"></script>
     <script src="js/currentdate.js"></script>
+        </body>
+</html>
